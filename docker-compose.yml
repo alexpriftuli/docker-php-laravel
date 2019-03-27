@@ -1,0 +1,16 @@
+version: '2'
+services:
+  laravel:
+    container_name: laravel_server
+    build: server/.
+    ports:
+      - 81:80
+    volumes:
+     - ../app:/var/www/
+     - ./server/nginx/conf.d:/etc/nginx/conf.d/
+    environment:
+      - DB_HOST=mariadb
+      - DB_PORT=3307
+      - DB_USERNAME=laravel
+      - DB_PASSWORD=laravel
+    tty: true
