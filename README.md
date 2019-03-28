@@ -1,7 +1,7 @@
-Docker image with PHP for Laravel
+Docker image for PHP applications
 ========================================
 
-Base image from [alpine:latest](https://hub.docker.com/_/alpine/)
+Base image from [phusion/baseimage:0.11](https://github.com/phusion/baseimage-docker)
 
 Additional PHP extension list:
 * ctype
@@ -13,24 +13,14 @@ Additional PHP extension list:
 * json
 * mbstring
 * phar
-* session
 * xml
-* xmlwriter
+* zip
+* dev
 * xdebug
 
 Additional tool list:
-* bash
 * composer
-* gulp-cli
-* mysql-client
-* nano
 * nginx
-* node
-* npm
 
 Additional startup bash script list:
 * ```alias ll='ls -la';```
-
-nginx port set `81`
-
-mysql port `3307`
