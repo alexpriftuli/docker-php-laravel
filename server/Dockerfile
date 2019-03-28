@@ -2,7 +2,7 @@ FROM phusion/baseimage:0.11
 MAINTAINER "alexandro.priftuli@gmail.com"
 
 RUN apt-get update
-RUN apt-get install -y curl libpng-dev mysql-client unzip
+RUN apt-get install -y curl libpng-dev mysql-client unzip git
 ADD root/.bashrc /root/
 
 # Install php7, nginx, curl ...
