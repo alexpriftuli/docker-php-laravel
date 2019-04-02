@@ -6,7 +6,7 @@ RUN apt-get install -y curl libpng-dev mysql-client unzip git
 ADD root/.bashrc /root/
 
 # Install php7, nginx, curl ...
-RUN apt-get install -y nginx php php-ctype php-curl php-dom php-fpm php-gd php-json php-mbstring php-phar php-xml php-zip php-dev
+RUN apt-get install -y nginx php php-ctype php-curl php-dom php-fpm php-gd php-json php-mbstring php-phar php-xml php-zip php-dev php-mysql
 
 # Install composer
 RUN curl -O https://getcomposer.org/composer.phar && mv composer.phar /usr/local/bin/composer && chmod 755 /usr/local/bin/composer

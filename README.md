@@ -24,3 +24,7 @@ Additional tool list:
 
 Additional startup bash script list:
 * ```alias ll='ls -la';```
+
+Default ports:
+nginx: `81`
+mysql: `3307`
