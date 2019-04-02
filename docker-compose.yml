@@ -10,7 +10,7 @@ services:
      - ./server/nginx/conf.d:/etc/nginx/conf.d/
     environment:
       - DB_HOST=mariadb
-      - DB_PORT=3307
+      - DB_PORT=3306
       - DB_USERNAME=laravel
       - DB_PASSWORD=laravel
      # - MONGO_HOST=mongodb
